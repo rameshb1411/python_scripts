@@ -159,3 +159,170 @@ class ModemSimulator:
 
     def check_nr_network_slicing_support(self):
         return self.ran_simulator.check_nr_network_slicing_support()
+# Add new methods for 3GPP test cases
+class RANSimulator:
+    def measure_throughput(self):
+        return random.uniform(50.0, 100.0)  # Mbps
+
+    def measure_latency(self):
+        return random.uniform(10.0, 50.0)  # ms
+
+    def handover_success_rate(self):
+        return random.uniform(95.0, 100.0)  # Percentage
+
+    def measure_signal_quality(self):
+        snr = random.uniform(20.0, 30.0)  # dB
+        ber = random.uniform(0.0001, 0.001)  # Bit Error Rate
+        return {"SNR": snr, "BER": ber}
+
+class ModemSimulator:
+    def __init__(self, ran_simulator):
+        self.ran_simulator = ran_simulator
+
+    def check_band_support(self, band):
+        supported_bands = self.ran_simulator.get_supported_bands()
+        return band in supported_bands
+
+    def get_signal_strength(self, band):
+        return self.ran_simulator.measure_signal_strength(band)
+
+    def get_modulation_schemes(self):
+        return self.ran_simulator.get_modulation_schemes()
+
+    def get_throughput(self):
+        return self.ran_simulator.measure_throughput()
+
+    def get_latency(self):
+        return self.ran_simulator.measure_latency()
+
+    def get_handover_success_rate(self):
+        return self.ran_simulator.handover_success_rate()
+
+    def get_signal_quality(self):
+        return self.ran_simulator.measure_signal_quality()
+
+# Add new methods for 3GPP test cases
+class RANSimulator:
+    def measure_throughput(self):
+        return random.uniform(50.0, 100.0)  # Mbps
+
+    def measure_latency(self):
+        return random.uniform(10.0, 50.0)  # ms
+
+    def handover_success_rate(self):
+        return random.uniform(95.0, 100.0)  # Percentage
+
+    def measure_signal_quality(self):
+        snr = random.uniform(20.0, 30.0)  # dB
+        ber = random.uniform(0.0001, 0.001)  # Bit Error Rate
+        return {"SNR": snr, "BER": ber}
+
+class ModemSimulator:
+    def __init__(self, ran_simulator):
+        self.ran_simulator = ran_simulator
+
+    def check_band_support(self, band):
+        supported_bands = self.ran_simulator.get_supported_bands()
+        return band in supported_bands
+
+    def get_signal_strength(self, band):
+        return self.ran_simulator.measure_signal_strength(band)
+
+    def get_modulation_schemes(self):
+        return self.ran_simulator.get_modulation_schemes()
+
+    def get_throughput(self):
+        return self.ran_simulator.measure_throughput()
+
+    def get_latency(self):
+        return self.ran_simulator.measure_latency()
+
+    def get_handover_success_rate(self):
+        return self.ran_simulator.handover_success_rate()
+
+    def get_signal_quality(self):
+        return self.ran_simulator.measure_signal_quality()
+
+# Add new methods for 3GPP test cases
+class RANSimulator:
+    def measure_throughput(self):
+        return random.uniform(50.0, 100.0)  # Mbps
+
+    def measure_latency(self):
+        return random.uniform(10.0, 50.0)  # ms
+
+    def handover_success_rate(self):
+        return random.uniform(95.0, 100.0)  # Percentage
+
+    def measure_signal_quality(self):
+        snr = random.uniform(20.0, 30.0)  # dB
+        ber = random.uniform(0.0001, 0.001)  # Bit Error Rate
+        return {"SNR": snr, "BER": ber}
+
+class ModemSimulator:
+    def __init__(self, ran_simulator):
+        self.ran_simulator = ran_simulator
+
+    def check_band_support(self, band):
+        supported_bands = self.ran_simulator.get_supported_bands()
+        return band in supported_bands
+
+    def get_signal_strength(self, band):
+        return self.ran_simulator.measure_signal_strength(band)
+
+    def get_modulation_schemes(self):
+        return self.ran_simulator.get_modulation_schemes()
+
+    def get_throughput(self):
+        return self.ran_simulator.measure_throughput()
+
+    def get_latency(self):
+        return self.ran_simulator.measure_latency()
+
+    def get_handover_success_rate(self):
+        return self.ran_simulator.handover_success_rate()
+
+    def get_signal_quality(self):
+        return self.ran_simulator.measure_signal_quality()
+
+# Add new methods for 3GPP test cases
+class RANSimulator:
+    def measure_throughput(self):
+        return random.uniform(50.0, 100.0)  # Mbps
+
+    def measure_latency(self):
+        return random.uniform(10.0, 50.0)  # ms
+
+    def handover_success_rate(self):
+        return random.uniform(95.0, 100.0)  # Percentage
+
+    def measure_signal_quality(self):
+        snr = random.uniform(20.0, 30.0)  # dB
+        ber = random.uniform(0.0001, 0.001)  # Bit Error Rate
+        return {"SNR": snr, "BER": ber}
+
+class ModemSimulator:
+    def __init__(self, ran_simulator):
+        self.ran_simulator = ran_simulator
+
+    def check_band_support(self, band):
+        supported_bands = self.ran_simulator.get_supported_bands()
+        return band in supported_bands
+
+    def get_signal_strength(self, band):
+        return self.ran_simulator.measure_signal_strength(band)
+
+    def get_modulation_schemes(self):
+        return self.ran_simulator.get_modulation_schemes()
+
+    def get_throughput(self):
+        return self.ran_simulator.measure_throughput()
+
+    def get_latency(self):
+        return self.ran_simulator.measure_latency()
+
+    def get_handover_success_rate(self):
+        return self.ran_simulator.handover_success_rate()
+
+    def get_signal_quality(self):
+        return self.ran_simulator.measure_signal_quality()
