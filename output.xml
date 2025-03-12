@@ -1,207 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-03-12T21:00:06.755491" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-03-12T21:02:58.956197" rpa="false" schemaversion="5">
 <suite id="s1" name="Test 5G Functionalities" source="C:\Users\Ramesh1\Downloads\RF_confirmence\tests\modem\test_5g_functionalities.robot">
 <test id="s1-t1" name="Test 5G Beamforming" line="9">
 <kw name="Setup Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.992405" elapsed="0.000232"/>
+<status status="PASS" start="2025-03-12T21:02:59.095087" elapsed="0.000253"/>
 </kw>
 <kw name="Execute Command" owner="device_keywords">
-<msg time="2025-03-12T21:00:06.992977" level="INFO">${beamforming_supported} = True</msg>
+<msg time="2025-03-12T21:02:59.096159" level="INFO">${beamforming_supported} = True</msg>
 <var>${beamforming_supported}</var>
 <arg>${DEVICE}</arg>
 <arg>check_beamforming_support</arg>
-<status status="PASS" start="2025-03-12T21:00:06.992780" elapsed="0.000229"/>
+<status status="PASS" start="2025-03-12T21:02:59.095706" elapsed="0.000506"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${beamforming_supported}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.993109" elapsed="0.000193"/>
+<status status="PASS" start="2025-03-12T21:02:59.096345" elapsed="0.000137"/>
 </kw>
 <kw name="Teardown Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.993402" elapsed="0.000103"/>
+<status status="PASS" start="2025-03-12T21:02:59.096582" elapsed="0.001038"/>
 </kw>
 <doc>Test the 5G beamforming functionality of the modem.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.991496" elapsed="0.002102"/>
+<status status="PASS" start="2025-03-12T21:02:59.093920" elapsed="0.004364"/>
 </test>
 <test id="s1-t2" name="Test 5G NR Carrier Aggregation" line="16">
 <kw name="Setup Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.994050" elapsed="0.000119"/>
+<status status="PASS" start="2025-03-12T21:02:59.098873" elapsed="0.000145"/>
 </kw>
 <kw name="Execute Command" owner="device_keywords">
-<msg time="2025-03-12T21:00:06.994371" level="INFO">${nr_ca_supported} = True</msg>
+<msg time="2025-03-12T21:02:59.099258" level="INFO">${nr_ca_supported} = True</msg>
 <var>${nr_ca_supported}</var>
 <arg>${DEVICE}</arg>
 <arg>check_nr_carrier_aggregation_support</arg>
-<status status="PASS" start="2025-03-12T21:00:06.994242" elapsed="0.000152"/>
+<status status="PASS" start="2025-03-12T21:02:59.099117" elapsed="0.000166"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${nr_ca_supported}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.994468" elapsed="0.000098"/>
+<status status="PASS" start="2025-03-12T21:02:59.099360" elapsed="0.000100"/>
 </kw>
 <kw name="Teardown Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.994630" elapsed="0.000205"/>
+<status status="PASS" start="2025-03-12T21:02:59.099527" elapsed="0.000079"/>
 </kw>
 <doc>Test the 5G NR carrier aggregation functionality of the modem.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.993785" elapsed="0.001210"/>
+<status status="PASS" start="2025-03-12T21:02:59.098527" elapsed="0.001147"/>
 </test>
 <test id="s1-t3" name="Test 5G NR Bandwidth" line="23">
 <kw name="Setup Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.995410" elapsed="0.000247"/>
+<status status="PASS" start="2025-03-12T21:02:59.100016" elapsed="0.000095"/>
 </kw>
 <kw name="Execute Command" owner="device_keywords">
-<msg time="2025-03-12T21:00:06.995941" level="INFO">${nr_bandwidth} = 100</msg>
+<msg time="2025-03-12T21:02:59.100273" level="INFO">${nr_bandwidth} = 100</msg>
 <var>${nr_bandwidth}</var>
 <arg>${DEVICE}</arg>
 <arg>get_nr_bandwidth</arg>
-<status status="PASS" start="2025-03-12T21:00:06.995775" elapsed="0.000188"/>
+<status status="PASS" start="2025-03-12T21:02:59.100169" elapsed="0.000132"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2025-03-12T21:00:06.996165" level="INFO">Argument types are:
+<msg time="2025-03-12T21:02:59.100476" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${nr_bandwidth}</arg>
 <arg>100</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.996046" elapsed="0.000189"/>
+<status status="PASS" start="2025-03-12T21:02:59.100370" elapsed="0.000160"/>
 </kw>
 <kw name="Teardown Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.996309" elapsed="0.000304"/>
+<status status="PASS" start="2025-03-12T21:02:59.100590" elapsed="0.000081"/>
 </kw>
 <doc>Test the 5G NR bandwidth support of the modem.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.995145" elapsed="0.001650"/>
+<status status="PASS" start="2025-03-12T21:02:59.099826" elapsed="0.000909"/>
 </test>
 <test id="s1-t4" name="Test 5G NR UL/DL Ratio" line="30">
 <kw name="Setup Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.997164" elapsed="0.000108"/>
+<status status="PASS" start="2025-03-12T21:02:59.101045" elapsed="0.000091"/>
 </kw>
 <kw name="Execute Command" owner="device_keywords">
-<msg time="2025-03-12T21:00:06.997465" level="INFO">${nr_ul_dl_ratio} = 2</msg>
+<msg time="2025-03-12T21:02:59.101295" level="INFO">${nr_ul_dl_ratio} = 2</msg>
 <var>${nr_ul_dl_ratio}</var>
 <arg>${DEVICE}</arg>
 <arg>get_nr_ul_dl_ratio</arg>
-<status status="PASS" start="2025-03-12T21:00:06.997338" elapsed="0.000148"/>
+<status status="PASS" start="2025-03-12T21:02:59.101195" elapsed="0.000119"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2025-03-12T21:00:06.997664" level="INFO">Argument types are:
+<msg time="2025-03-12T21:02:59.101468" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${nr_ul_dl_ratio}</arg>
 <arg>2</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.997558" elapsed="0.000150"/>
+<status status="PASS" start="2025-03-12T21:02:59.101378" elapsed="0.000139"/>
 </kw>
 <kw name="Teardown Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.997771" elapsed="0.000086"/>
+<status status="PASS" start="2025-03-12T21:02:59.101576" elapsed="0.000072"/>
 </kw>
 <doc>Test the 5G NR uplink/downlink ratio of the modem.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.996942" elapsed="0.000980"/>
+<status status="PASS" start="2025-03-12T21:02:59.100839" elapsed="0.000873"/>
 </test>
 <test id="s1-t5" name="Test 5G NR Massive MIMO" line="37">
 <kw name="Setup Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.998263" elapsed="0.000096"/>
+<status status="PASS" start="2025-03-12T21:02:59.102038" elapsed="0.000297"/>
 </kw>
 <kw name="Execute Command" owner="device_keywords">
-<msg time="2025-03-12T21:00:06.998545" level="INFO">${nr_massive_mimo_supported} = True</msg>
+<msg time="2025-03-12T21:02:59.102495" level="INFO">${nr_massive_mimo_supported} = True</msg>
 <var>${nr_massive_mimo_supported}</var>
 <arg>${DEVICE}</arg>
 <arg>check_nr_massive_mimo_support</arg>
-<status status="PASS" start="2025-03-12T21:00:06.998421" elapsed="0.000144"/>
+<status status="PASS" start="2025-03-12T21:02:59.102394" elapsed="0.000118"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${nr_massive_mimo_supported}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.998647" elapsed="0.000092"/>
+<status status="PASS" start="2025-03-12T21:02:59.102577" elapsed="0.000093"/>
 </kw>
 <kw name="Teardown Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.998796" elapsed="0.000074"/>
+<status status="PASS" start="2025-03-12T21:02:59.102772" elapsed="0.000085"/>
 </kw>
 <doc>Test the 5G NR massive MIMO functionality of the modem.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.998047" elapsed="0.000883"/>
+<status status="PASS" start="2025-03-12T21:02:59.101840" elapsed="0.001079"/>
 </test>
 <test id="s1-t6" name="Test 5G NR HARQ" line="44">
 <kw name="Setup Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:06.999247" elapsed="0.000082"/>
+<status status="PASS" start="2025-03-12T21:02:59.103218" elapsed="0.000091"/>
 </kw>
 <kw name="Execute Command" owner="device_keywords">
-<msg time="2025-03-12T21:00:06.999798" level="INFO">${nr_harq_supported} = True</msg>
+<msg time="2025-03-12T21:02:59.103784" level="INFO">${nr_harq_supported} = True</msg>
 <var>${nr_harq_supported}</var>
 <arg>${DEVICE}</arg>
 <arg>check_nr_harq_support</arg>
-<status status="PASS" start="2025-03-12T21:00:06.999385" elapsed="0.000450"/>
+<status status="PASS" start="2025-03-12T21:02:59.103363" elapsed="0.000447"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${nr_harq_supported}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.999924" elapsed="0.000105"/>
+<status status="PASS" start="2025-03-12T21:02:59.103906" elapsed="0.000109"/>
 </kw>
 <kw name="Teardown Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:07.000095" elapsed="0.000092"/>
+<status status="PASS" start="2025-03-12T21:02:59.104081" elapsed="0.000085"/>
 </kw>
 <doc>Test the 5G NR HARQ (Hybrid Automatic Repeat Request) functionality of the modem.</doc>
-<status status="PASS" start="2025-03-12T21:00:06.999033" elapsed="0.001220"/>
+<status status="PASS" start="2025-03-12T21:02:59.103023" elapsed="0.001205"/>
 </test>
 <test id="s1-t7" name="Test 5G NR Power Control" line="51">
 <kw name="Setup Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:07.000578" elapsed="0.000087"/>
+<status status="PASS" start="2025-03-12T21:02:59.104572" elapsed="0.000108"/>
 </kw>
 <kw name="Execute Command" owner="device_keywords">
-<msg time="2025-03-12T21:00:07.000844" level="INFO">${nr_power_control_supported} = True</msg>
+<msg time="2025-03-12T21:02:59.105107" level="INFO">${nr_power_control_supported} = True</msg>
 <var>${nr_power_control_supported}</var>
 <arg>${DEVICE}</arg>
 <arg>check_nr_power_control_support</arg>
-<status status="PASS" start="2025-03-12T21:00:07.000729" elapsed="0.000135"/>
+<status status="PASS" start="2025-03-12T21:02:59.104960" elapsed="0.000177"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${nr_power_control_supported}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-03-12T21:00:07.000936" elapsed="0.000102"/>
+<status status="PASS" start="2025-03-12T21:02:59.105236" elapsed="0.000101"/>
 </kw>
 <kw name="Teardown Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:07.001103" elapsed="0.000084"/>
+<status status="PASS" start="2025-03-12T21:02:59.105411" elapsed="0.000094"/>
 </kw>
 <doc>Test the 5G NR power control functionality of the modem.</doc>
-<status status="PASS" start="2025-03-12T21:00:07.000362" elapsed="0.000887"/>
+<status status="PASS" start="2025-03-12T21:02:59.104334" elapsed="0.001242"/>
 </test>
 <test id="s1-t8" name="Test 5G NR Network Slicing" line="58">
 <kw name="Setup Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:07.001717" elapsed="0.000107"/>
+<status status="PASS" start="2025-03-12T21:02:59.106053" elapsed="0.000087"/>
 </kw>
 <kw name="Execute Command" owner="device_keywords">
-<msg time="2025-03-12T21:00:07.001989" level="INFO">${network_slicing_supported} = True</msg>
+<msg time="2025-03-12T21:02:59.106323" level="INFO">${network_slicing_supported} = True</msg>
 <var>${network_slicing_supported}</var>
 <arg>${DEVICE}</arg>
 <arg>check_nr_network_slicing_support</arg>
-<status status="PASS" start="2025-03-12T21:00:07.001885" elapsed="0.000123"/>
+<status status="PASS" start="2025-03-12T21:02:59.106214" elapsed="0.000129"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${network_slicing_supported}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-03-12T21:00:07.002071" elapsed="0.000090"/>
+<status status="PASS" start="2025-03-12T21:02:59.106411" elapsed="0.000089"/>
 </kw>
 <kw name="Teardown Device Connection" owner="device_keywords">
 <arg>${DEVICE}</arg>
-<status status="PASS" start="2025-03-12T21:00:07.002221" elapsed="0.000074"/>
+<status status="PASS" start="2025-03-12T21:02:59.106555" elapsed="0.000074"/>
 </kw>
 <doc>Test the 5G NR network slicing functionality of the modem.</doc>
-<status status="PASS" start="2025-03-12T21:00:07.001502" elapsed="0.000864"/>
+<status status="PASS" start="2025-03-12T21:02:59.105846" elapsed="0.000856"/>
 </test>
-<status status="PASS" start="2025-03-12T21:00:06.763738" elapsed="0.238904"/>
+<status status="PASS" start="2025-03-12T21:02:58.959843" elapsed="0.147134"/>
 </suite>
 <statistics>
 <total>
